@@ -16,6 +16,8 @@
         <activity android:name=".FirstExerciseActivity"/>
         <activity android:name=".FourthExerciseActivity"/>
         <activity android:name=".LettersActivity"/>
+        <activity android:name=".ThirdExerciseActivity"/>
+        <activity android:name=".SecondExerciseActivity"/>
         <activity android:name=".StartingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
