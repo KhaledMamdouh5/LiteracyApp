@@ -16,7 +16,7 @@ public class ActivityN1_10 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_n1);
+        setContentView(R.layout.activity_n1_10);
         number = findViewById(R.id.Number);
         numberImage = new int[]{R.drawable.number1, R.drawable.number2, R.drawable.number3, R.drawable.number4,
                 R.drawable.number5, R.drawable.number6, R.drawable.number7, R.drawable.number8, R.drawable.number9,
