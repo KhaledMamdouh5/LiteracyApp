@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SecondExerciseActivity extends AppCompatActivity {
+public class ActivityFourthExercise extends AppCompatActivity {
 int [] wordImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

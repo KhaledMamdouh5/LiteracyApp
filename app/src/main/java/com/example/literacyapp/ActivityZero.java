@@ -26,4 +26,13 @@ public class ActivityZero extends AppCompatActivity {
         Intent openactivityn1_10 = new Intent(this, ActivityN1_10.class);
         startActivity(openactivityn1_10);
     }
+
+    public void onBackPressed(){
+        OpenActivityStarting();
+    }
+
+    public void OpenActivityStarting(){
+        Intent openactivitystarting = new Intent(this, ActivityStarting.class);
+        startActivity(openactivitystarting);
+    }
 }

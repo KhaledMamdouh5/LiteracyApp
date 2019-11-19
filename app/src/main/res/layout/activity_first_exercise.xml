@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".FirstExerciseActivity">
+    tools:context=".ActivityFirstExercise">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -1,9 +1,9 @@
 package com.example.literacyapp;
 
-public class ModelFourthExercise {
+public class ModelSecondExercise {
     Integer WordsImages;
 
-    public ModelFourthExercise(Integer wordsImages) {
+    public ModelSecondExercise(Integer wordsImages) {
         this.WordsImages = wordsImages;
     }
 

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FirstExerciseActivity extends AppCompatActivity implements AdapterFirstExercise.OnItemClickListener{
+public class ActivityFirstExercise extends AppCompatActivity implements AdapterFirstExercise.OnItemClickListener{
     RecyclerView recyclerView;
     ArrayList<ModelFirstExercise> modelFirstExercise;
     AdapterFirstExercise adapterFirstExercise;
@@ -44,12 +44,12 @@ public class FirstExerciseActivity extends AppCompatActivity implements AdapterF
             modelFirstExercise.add(model);
         }
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(FirstExerciseActivity.this,
+        LinearLayoutManager layoutManager = new LinearLayoutManager(ActivityFirstExercise.this,
                 LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        adapterFirstExercise = new AdapterFirstExercise(FirstExerciseActivity.this, modelFirstExercise);
-        adapterFirstExercise.setOnitemclicklistener(FirstExerciseActivity.this);
+        adapterFirstExercise = new AdapterFirstExercise(ActivityFirstExercise.this, modelFirstExercise);
+        adapterFirstExercise.setOnitemclicklistener(ActivityFirstExercise.this);
 
         adapterFirstExercise.setOnitemclicklistener(new AdapterFirstExercise.OnItemClickListener() {
             @Override
@@ -69,14 +69,23 @@ public class FirstExerciseActivity extends AppCompatActivity implements AdapterF
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, FirstExerciseActivity.class);
+        Intent detailIntent = new Intent(this, ActivityFirstExercise.class);
     }
 
     public void forward(View view) {
-        OpenThirdExerciseActivity();
+        OpenActivitySecondExercise();
     }
-    public void OpenThirdExerciseActivity(){
-        Intent openthirdexerciesactivity = new Intent(this, ThirdExerciseActivity.class);
-        startActivity(openthirdexerciesactivity);
+    public void OpenActivitySecondExercise(){
+        Intent openactivitysecondexercies = new Intent(this, ActivitySecondExercise.class);
+        startActivity(openactivitysecondexercies);
+    }
+
+    public void onBackPressed(){
+        OpenActivityStarting();
+    }
+
+    public void OpenActivityStarting(){
+        Intent openactivitystarting = new Intent(this, ActivityStarting.class);
+        startActivity(openactivitystarting);
     }
 }

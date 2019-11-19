@@ -10,7 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-public class StartingActivity extends AppCompatActivity {
+public class ActivityStarting extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu mentormenu) {
         MenuInflater inflater = getMenuInflater();
@@ -34,11 +34,11 @@ public class StartingActivity extends AppCompatActivity {
     }
 
     public void openletters(View view) {
-        OpenLettersActivity();
+        OpenActivityLetters();
     }
-    public void OpenLettersActivity(){
-        Intent openlettersactivity = new Intent(this, LettersActivity.class);
-        startActivity(openlettersactivity);
+    public void OpenActivityLetters(){
+        Intent openactivityletters = new Intent(this, ActivityLetters.class);
+        startActivity(openactivityletters);
     }
     public void opennumbers(View view) {
         OpenActivityZero();

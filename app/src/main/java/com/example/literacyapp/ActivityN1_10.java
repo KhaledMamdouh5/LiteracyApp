@@ -62,4 +62,12 @@ public class ActivityN1_10 extends AppCompatActivity {
         startActivity(openactivityzero);
     }
 
+    public void onBackPressed(){
+        OpenActivityStarting();
+    }
+
+    public void OpenActivityStarting(){
+        Intent openactivitystarting = new Intent(this, ActivityStarting.class);
+        startActivity(openactivitystarting);
+    }
 }

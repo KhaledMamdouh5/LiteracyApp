@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,7 +13,7 @@ import java.util.ArrayList;
 
 public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExercise.ViewHolder> {
     ArrayList<ModelThirdExercise> modelThirdExercise;
-    Context contextthirdexercise;
+    Context contextfourthexercise;
     OnItemClickListener onitemclicklistener;
 
 
@@ -24,15 +23,15 @@ public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExerc
     public void setOnitemclicklistener (OnItemClickListener listener){
         onitemclicklistener = listener;
     }
-    public AdapterThirdExercise(Context contextthirdexercise, ArrayList<ModelThirdExercise> modelThirdExercise){
-        this.contextthirdexercise = contextthirdexercise;
+    public AdapterThirdExercise(Context contextfourthexercise, ArrayList<ModelThirdExercise> modelThirdExercise){
+        this.contextfourthexercise = contextfourthexercise;
         this.modelThirdExercise = modelThirdExercise;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.thirdexercise,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fourthexercise,parent,false);
         return new ViewHolder(view);
     }
 
@@ -50,7 +49,7 @@ public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExerc
         ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image_view_third_exercise);
+            imageView = itemView.findViewById(R.id.image_view_fourth_exercise);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

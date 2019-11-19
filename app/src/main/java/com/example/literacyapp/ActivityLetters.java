@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LettersActivity extends AppCompatActivity implements AdapterLetters.OnItemClickListener {
+public class ActivityLetters extends AppCompatActivity implements AdapterLetters.OnItemClickListener {
     RecyclerView recyclerView;
     ArrayList<ModelLetters> modelLetters;
     AdapterLetters adapterLetters;
@@ -102,12 +102,12 @@ public class LettersActivity extends AppCompatActivity implements AdapterLetters
             modelLetters.add(model);
         }
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(LettersActivity.this,
+        LinearLayoutManager layoutManager = new LinearLayoutManager(ActivityLetters.this,
                 LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        adapterLetters = new AdapterLetters(LettersActivity.this, modelLetters);
-        adapterLetters.setOnitemclicklistener(LettersActivity.this);
+        adapterLetters = new AdapterLetters(ActivityLetters.this, modelLetters);
+        adapterLetters.setOnitemclicklistener(ActivityLetters.this);
 
         adapterLetters.setOnitemclicklistener(new AdapterLetters.OnItemClickListener() {
             @Override
@@ -148,11 +148,11 @@ public class LettersActivity extends AppCompatActivity implements AdapterLetters
     }
 
     public void forward(View view) {
-        OpenFirstExerciseActivity();
+        OpenActivityFirstExercise();
     }
-    public void OpenFirstExerciseActivity(){
-        Intent openfirstexerciesactivity = new Intent(this, FirstExerciseActivity.class);
-        startActivity(openfirstexerciesactivity);
+    public void OpenActivityFirstExercise(){
+        Intent openactivityfirstexercies = new Intent(this, ActivityFirstExercise.class);
+        startActivity(openactivityfirstexercies);
     }
 
     public void camera(View view) {
@@ -160,6 +160,15 @@ public class LettersActivity extends AppCompatActivity implements AdapterLetters
 
     @Override
     public void onItemClick(int position) {
-        Intent detailIntent = new Intent(this, LettersActivity.class);
+        Intent detailIntent = new Intent(this, ActivityLetters.class);
+    }
+
+    public void onBackPressed(){
+        OpenActivityStarting();
+    }
+
+    public void OpenActivityStarting(){
+        Intent openactivitystarting = new Intent(this, ActivityStarting.class);
+        startActivity(openactivitystarting);
     }
 }

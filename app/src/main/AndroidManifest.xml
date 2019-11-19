@@ -13,12 +13,12 @@
         <activity android:name=".ActivityZero"/>
         <activity android:name=".ActivityN1_10"/>
         <activity android:name=".ActivityN11_90"/>
-        <activity android:name=".FirstExerciseActivity"/>
-        <activity android:name=".FourthExerciseActivity"/>
-        <activity android:name=".LettersActivity"/>
-        <activity android:name=".ThirdExerciseActivity"/>
-        <activity android:name=".SecondExerciseActivity"/>
-        <activity android:name=".StartingActivity">
+        <activity android:name=".ActivityFirstExercise"/>
+        <activity android:name=".ActivityThirdExercise"/>
+        <activity android:name=".ActivityLetters"/>
+        <activity android:name=".ActivitySecondExercise"/>
+        <activity android:name=".ActivityFourthExercise"/>
+        <activity android:name=".ActivityStarting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

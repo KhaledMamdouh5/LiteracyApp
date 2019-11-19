@@ -47,4 +47,13 @@ public class ActivityN11_90 extends AppCompatActivity {
         }
         number.setImageResource(numberImage[index]);
     }
+
+    public void onBackPressed(){
+        OpenActivityStarting();
+    }
+
+    public void OpenActivityStarting(){
+        Intent openactivitystarting = new Intent(this, ActivityStarting.class);
+        startActivity(openactivitystarting);
+    }
 }
