@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ActivityN1_10">
+
+    <ImageView
+        android:id="@+id/Number"
+        android:layout_width="wrap_content"
+        android:layout_height="415dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/number1"
+        android:onClick="number1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BackwardN1"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:background="@drawable/leftarrow"
+            android:onClick="backwardn1" />
+
+        <Button
+            android:id="@+id/CameraN1"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/pen"
+            android:onClick="cameran1" />
+
+        <Button
+            android:id="@+id/ForwardN1"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:background="@drawable/rightarrow"
+            android:onClick="forwardn1" />
+
+    </LinearLayout>
+
+</LinearLayout>

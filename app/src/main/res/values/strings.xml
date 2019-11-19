@@ -1,0 +1,495 @@
+<resources>
+    <string name="app_name">Literacy App</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="lettersspinner3">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+    </string-array>
+    <string-array name="lettersspinner4">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+    </string-array>
+    <string-array name="lettersspinner5">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+    </string-array>
+    <string-array name="lettersspinner6">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+    </string-array>
+    <string-array name="lettersspinner7">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+    </string-array>
+    <string-array name="lettersspinner8">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+    </string-array>
+    <string-array name="lettersspinner9">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+    </string-array>
+    <string-array name="lettersspinner10">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+    </string-array>
+    <string-array name="lettersspinner11">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner12">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner13">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner14">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner15">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner16">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner17">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner18">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner19">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner20">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner21">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner22">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner23">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner24">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item>حرف اللام (ل)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner25">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item>حرف اللام (ل)</item>
+        <item>حرف الميم (م)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner26">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item>حرف اللام (ل)</item>
+        <item>حرف الميم (م)</item>
+        <item>حرف النون (ن)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner27">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item>حرف اللام (ل)</item>
+        <item>حرف الميم (م)</item>
+        <item>حرف النون (ن)</item>
+        <item>حرف الهاء (ه)</item>
+        <item></item>
+    </string-array>
+    <string-array name="lettersspinner28">
+        <item></item>
+        <item>حرف الألف (أ)</item>
+        <item>حرف الباء (ب)</item>
+        <item>حرف التاء (ت)</item>
+        <item>حرف الثاء (ث)</item>
+        <item>حرف الجيم (ج)</item>
+        <item>حرف الحاء (ح)</item>
+        <item>حرف الخاء (خ)</item>
+        <item>حرف الدال (د)</item>
+        <item>حرف الذال (ذ)</item>
+        <item>حرف الراء (ر)</item>
+        <item>حرف الزاي (ز)</item>
+        <item>حرف السين (س)</item>
+        <item>حرف الشين (ش)</item>
+        <item>حرف الصاد (ص)</item>
+        <item>حرف الضاد (ض)</item>
+        <item>حرف الطاء (ط)</item>
+        <item>حرف الظاء (ظ)</item>
+        <item>حرف العين (ع)</item>
+        <item>حرف الغين (غ)</item>
+        <item>حرف الفاء (ف)</item>
+        <item>حرف القاف (ق)</item>
+        <item>حرف الكاف (ك)</item>
+        <item>حرف اللام (ل)</item>
+        <item>حرف الميم (م)</item>
+        <item>حرف النون (ن)</item>
+        <item>حرف الهاء (ه)</item>
+        <item>حرف الواو (و)</item>
+        <item></item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+</resources>
