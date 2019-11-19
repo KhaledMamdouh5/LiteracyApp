@@ -23,12 +23,22 @@ public class ActivityN1_10 extends AppCompatActivity {
                 R.drawable.number10};
     }
 
-    public void forwardn1(View view) {
-        index++;
+    public void forward(View view) {
+        if (index < 9) {
+            index++;
+        }
+        else {
+            OpenActivityN11_90();
+        }
         number.setImageResource(numberImage[index]);
     }
 
-    public void number1(View view) {
+    public void OpenActivityN11_90(){
+        Intent openactivityn11_90 = new Intent(this, ActivityN11_90.class);
+        startActivity(openactivityn11_90);
+    }
+
+    public void number(View view) {
     }
 
     public void cameran1(View view) {
@@ -38,11 +48,18 @@ public class ActivityN1_10 extends AppCompatActivity {
     }
 
     public void backwardn1(View view) {
-        OpenActivityZero();
+        if (index > 0) {
+            index--;
+        }
+        else {
+            OpenActivityZero();
+        }
+        number.setImageResource(numberImage[index]);
     }
 
     public void OpenActivityZero() {
-        Intent openactivityzero = new Intent(this, ActivityZero.class);
+        Intent openactivityzero = new Intent(this,ActivityZero.class);
         startActivity(openactivityzero);
     }
+
 }

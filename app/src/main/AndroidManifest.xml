@@ -12,7 +12,7 @@
         <activity android:name=".ActivityMentor"/>
         <activity android:name=".ActivityZero"/>
         <activity android:name=".ActivityN1_10"/>
-        <activity android:name=".ActivityN11"/>
+        <activity android:name=".ActivityN11_90"/>
         <activity android:name=".FirstExerciseActivity"/>
         <activity android:name=".FourthExerciseActivity"/>
         <activity android:name=".LettersActivity"/>

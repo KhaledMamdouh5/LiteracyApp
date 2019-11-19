@@ -6,47 +6,40 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".ActivityN1_10">
+    tools:context=".ActivityN11_90">
 
     <ImageView
         android:id="@+id/Number"
         android:layout_width="wrap_content"
-        android:layout_height="420dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="435dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/number1"
+        android:src="@drawable/number11"
         android:onClick="number"/>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/BackwardN1"
+            android:id="@+id/Backward"
             android:layout_width="100dp"
             android:layout_height="65dp"
             android:background="@drawable/leftarrow"
-            android:onClick="backwardn1" />
+            android:onClick="backward"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"/>
+
 
         <Button
-            android:id="@+id/CameraN1"
-            android:layout_width="80dp"
-            android:layout_height="65dp"
-            android:layout_marginLeft="48dp"
-            android:layout_marginRight="48dp"
-            android:background="@drawable/pen"
-            android:onClick="cameran1" />
-
-        <Button
-            android:id="@+id/ForwardN1"
+            android:id="@+id/ForwardN"
             android:layout_width="100dp"
             android:layout_height="65dp"
             android:background="@drawable/rightarrow"
-            android:onClick="forward" />
-
-    </LinearLayout>
+            android:onClick="forwardn"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

@@ -34,11 +34,11 @@ public class StartingActivity extends AppCompatActivity {
     }
 
     public void openletters(View view) {
-        OpenMainActivity();
+        OpenLettersActivity();
     }
-    public void OpenMainActivity(){
-        Intent openmainactivity = new Intent(this, LettersActivity.class);
-        startActivity(openmainactivity);
+    public void OpenLettersActivity(){
+        Intent openlettersactivity = new Intent(this, LettersActivity.class);
+        startActivity(openlettersactivity);
     }
     public void opennumbers(View view) {
         OpenActivityZero();
