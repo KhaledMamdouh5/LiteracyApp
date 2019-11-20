@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class AdapterSecondExercise extends RecyclerView.Adapter<AdapterSecondExercise.ViewHolder> {
     ArrayList<ModelSecondExercise> modelSecondExercise;
-    Context contextthirdexercise;
+    Context contextsecondexercise;
     OnItemClickListener onitemclicklistener;
 
 
@@ -23,15 +23,15 @@ public class AdapterSecondExercise extends RecyclerView.Adapter<AdapterSecondExe
     public void setOnitemclicklistener (OnItemClickListener listener){
         onitemclicklistener = listener;
     }
-    public AdapterSecondExercise(Context contextthirdexercise, ArrayList<ModelSecondExercise> modelSecondExercise){
-        this.contextthirdexercise = contextthirdexercise;
+    public AdapterSecondExercise(Context contextsecondexercise, ArrayList<ModelSecondExercise> modelSecondExercise){
+        this.contextsecondexercise = contextsecondexercise;
         this.modelSecondExercise = modelSecondExercise;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.thirdexercise,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.secondexercise,parent,false);
         return new ViewHolder(view);
     }
 
@@ -49,7 +49,7 @@ public class AdapterSecondExercise extends RecyclerView.Adapter<AdapterSecondExe
         ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image_view_third_exercise);
+            imageView = itemView.findViewById(R.id.image_view_second_exercise);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

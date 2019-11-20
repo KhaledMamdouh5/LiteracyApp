@@ -11,45 +11,46 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExercise.ViewHolder> {
-    ArrayList<ModelThirdExercise> modelThirdExercise;
-    Context contextthirdexercise;
-    OnItemClickListener onitemclicklistener;
-
+public class AdapterFourthExercise extends RecyclerView.Adapter<AdapterFourthExercise.ViewHolder> {
+    ArrayList<ModelFourthExercise> modelFourthExercise;
+    Context contextfourthexercise;
+    AdapterFourthExercise.OnItemClickListener onitemclicklistener;
 
     public interface OnItemClickListener{
         void onItemClick (int position);
     }
-    public void setOnitemclicklistener (OnItemClickListener listener){
+    public void setOnitemclicklistener (AdapterFourthExercise.OnItemClickListener listener){
         onitemclicklistener = listener;
     }
-    public AdapterThirdExercise(Context contextthirdexercise, ArrayList<ModelThirdExercise> modelThirdExercise){
-        this.contextthirdexercise = contextthirdexercise;
-        this.modelThirdExercise = modelThirdExercise;
-    }
 
+    public AdapterFourthExercise(Context contextfourthexercise, ArrayList<ModelFourthExercise> modelFourthExercise){
+        this.contextfourthexercise = contextfourthexercise;
+        this.modelFourthExercise = modelFourthExercise;
+    }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.thirdexercise,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fourthexercise,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.imageView.setImageResource(modelThirdExercise.get(position).getWordsImages());
+        holder.imageView.setImageResource(modelFourthExercise.get(position).getWordsImages());
+
     }
 
     @Override
     public int getItemCount() {
-        return modelThirdExercise.size();
+        return modelFourthExercise.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image_view_third_exercise);
+            imageView = itemView.findViewById(R.id.image_view_fourth_exercise);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

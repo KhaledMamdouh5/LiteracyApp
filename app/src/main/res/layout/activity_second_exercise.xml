@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/WordImageThirdExercise"
+                android:id="@+id/WordImageSecondExercise"
                 android:layout_width="230dp"
                 android:layout_height="175dp"
                 android:layout_marginTop="8dp"
@@ -33,7 +33,7 @@
                 android:background="@drawable/audio" />
 
             <TextView
-                android:id="@+id/WordsLettersThirdExercise"
+                android:id="@+id/WordsLettersSecondExercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -58,7 +58,7 @@
                     android:onClick="correcting"/>
 
                 <EditText
-                    android:id="@+id/EditTextThirdExercise"
+                    android:id="@+id/EditTextSeconddExercise"
                     android:layout_width="180dp"
                     android:layout_height="48dp"
                     android:gravity="center"

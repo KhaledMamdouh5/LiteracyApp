@@ -21,6 +21,8 @@ public class ActivityN11_90 extends AppCompatActivity {
                 R.drawable.number15, R.drawable.number16, R.drawable.number17, R.drawable.number18, R.drawable.number19,
                 R.drawable.number20, R.drawable.number30, R.drawable.number40, R.drawable.number50, R.drawable.number60,
                 R.drawable.number70, R.drawable.number80, R.drawable.number90};
+
+
     }
 
     public void number(View view) {
@@ -38,6 +40,7 @@ public class ActivityN11_90 extends AppCompatActivity {
 
     public void OpenActivityN1_10() {
        Intent openactivityn1_10 = new Intent(this,ActivityN1_10.class);
+       openactivityn1_10.putExtra("id",true);
        startActivity(openactivityn1_10);
     }
 

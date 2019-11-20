@@ -21,6 +21,8 @@ public class ActivityN1_10 extends AppCompatActivity {
         numberImage = new int[]{R.drawable.number1, R.drawable.number2, R.drawable.number3, R.drawable.number4,
                 R.drawable.number5, R.drawable.number6, R.drawable.number7, R.drawable.number8, R.drawable.number9,
                 R.drawable.number10};
+
+
     }
 
     public void forward(View view) {
@@ -69,5 +71,14 @@ public class ActivityN1_10 extends AppCompatActivity {
     public void OpenActivityStarting(){
         Intent openactivitystarting = new Intent(this, ActivityStarting.class);
         startActivity(openactivitystarting);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (getIntent().getBooleanExtra("id" , false)){
+            index = 9;
+            number.setImageResource(numberImage[index]);
+        }
     }
 }

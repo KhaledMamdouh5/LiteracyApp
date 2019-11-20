@@ -51,4 +51,5 @@ public class ActivityStarting extends AppCompatActivity {
         Intent openactivitynmentor = new Intent(this, ActivityMentor.class);
         startActivity(openactivitynmentor);
     }
+
 }

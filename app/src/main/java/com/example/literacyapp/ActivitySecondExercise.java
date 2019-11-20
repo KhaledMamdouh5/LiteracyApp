@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,14 +23,16 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
     ArrayList<ModelSecondExercise> modelSecondExercise;
     ImageView wordImage;
     TextView wordsLetters;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_exercise);
-        wordImage = findViewById(R.id.WordImageThirdExercise);
-        wordsLetters = findViewById(R.id.WordsLettersThirdExercise);
+        wordImage = findViewById(R.id.WordImageSecondExercise);
+        wordsLetters = findViewById(R.id.WordsLettersSecondExercise);
         recyclerView = findViewById(R.id.recycler_view);
+        editText = findViewById(R.id.EditTextSeconddExercise);
 
         final Integer[] WordsImages = {R.drawable.tail, R.drawable.flowers, R.drawable.shadow, R.drawable.oil, R.drawable.pound,
                 R.drawable.blueberry, R.drawable.seed, R.drawable.clouds, R.drawable.cloud, R.drawable.oats, R.drawable.church};
@@ -42,23 +47,23 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
         for (int i = 0; i < WordsImages.length; i++) {
             ModelSecondExercise model = new ModelSecondExercise(WordsImages[i]);
             modelSecondExercise.add(model);
-
-            LinearLayoutManager layoutManager = new LinearLayoutManager(ActivitySecondExercise.this,
-                    LinearLayoutManager.HORIZONTAL, true);
-            recyclerView.setLayoutManager(layoutManager);
-            recyclerView.setItemAnimator(new DefaultItemAnimator());
-            adapterSecondExercise = new AdapterSecondExercise(ActivitySecondExercise.this, modelSecondExercise);
-            adapterSecondExercise.setOnitemclicklistener(ActivitySecondExercise.this);
-
-            adapterSecondExercise.setOnitemclicklistener(new AdapterSecondExercise.OnItemClickListener() {
-                @Override
-                public void onItemClick(int position) {
-                    wordImage.setImageResource(WordsImages[position]);
-                    wordsLetters.setText(WordsLetters[position]);
-                }
-            });
-            recyclerView.setAdapter(adapterSecondExercise);
         }
+        LinearLayoutManager layoutManager = new LinearLayoutManager(ActivitySecondExercise.this,
+                LinearLayoutManager.HORIZONTAL, true);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        adapterSecondExercise = new AdapterSecondExercise(ActivitySecondExercise.this, modelSecondExercise);
+        adapterSecondExercise.setOnitemclicklistener(ActivitySecondExercise.this);
+
+        adapterSecondExercise.setOnitemclicklistener(new AdapterSecondExercise.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                wordImage.setImageResource(WordsImages[position]);
+                wordsLetters.setText(WordsLetters[position]);
+            }
+        });
+        recyclerView.setAdapter(adapterSecondExercise);
+
     }
 
     @Override
@@ -76,6 +81,7 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
     }
 
     public void correcting(View view) {
+
     }
 
     public void onBackPressed() {
