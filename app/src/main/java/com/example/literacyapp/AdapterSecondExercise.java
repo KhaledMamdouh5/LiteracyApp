@@ -15,7 +15,8 @@ public class AdapterSecondExercise extends RecyclerView.Adapter<AdapterSecondExe
     ArrayList<ModelSecondExercise> modelSecondExercise;
     Context contextsecondexercise;
     OnItemClickListener onitemclicklistener;
-
+    int image;
+    String question , answer ;
 
     public interface OnItemClickListener{
         void onItemClick (int position);
@@ -37,7 +38,7 @@ public class AdapterSecondExercise extends RecyclerView.Adapter<AdapterSecondExe
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.imageView.setImageResource(modelSecondExercise.get(position).getWordsImages());
+        holder.imageView.setImageResource(modelSecondExercise.get(position).getImage());
     }
 
     @Override

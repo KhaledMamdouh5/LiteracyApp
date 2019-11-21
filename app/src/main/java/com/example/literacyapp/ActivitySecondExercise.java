@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -15,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ActivitySecondExercise extends AppCompatActivity implements AdapterSecondExercise.OnItemClickListener {
     RecyclerView recyclerView;
@@ -24,6 +22,7 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
     ImageView wordImage;
     TextView wordsLetters;
     EditText editText;
+    int Position = 0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +31,21 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
         wordImage = findViewById(R.id.WordImageSecondExercise);
         wordsLetters = findViewById(R.id.WordsLettersSecondExercise);
         recyclerView = findViewById(R.id.recycler_view);
-        editText = findViewById(R.id.EditTextSeconddExercise);
+        editText = findViewById(R.id.EditTextSecondExercise);
 
-        final Integer[] WordsImages = {R.drawable.tail, R.drawable.flowers, R.drawable.shadow, R.drawable.oil, R.drawable.pound,
-                R.drawable.blueberry, R.drawable.seed, R.drawable.clouds, R.drawable.cloud, R.drawable.oats, R.drawable.church};
-        final String[] WordsLetters = {"يـ - ـل - ذ", "هـ - ز - ر - ـو", "ـل - ظـ", "يـ - ـت - ز", "ـيـ - ـه - جـ - ـنـ", "تـ - ت - ـو",
-                "ـذ - ر - ة - بـ", "ـيـ - م - غـ - ـو", "ـمـ - غـ - ـة - ـيـ", "ـا - فـ - شـ - ن - ـو", "ـنـ - ـسـ - ـيـ - ـة - كـ"};
-
-        final List<String> newWordsLetters = new ArrayList<>();
-        for (String i : WordsLetters) {
-            newWordsLetters.add(i);
-        }
         modelSecondExercise = new ArrayList<>();
-        for (int i = 0; i < WordsImages.length; i++) {
-            ModelSecondExercise model = new ModelSecondExercise(WordsImages[i]);
-            modelSecondExercise.add(model);
-        }
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.tail , "يـ - ـل - ذ"  , "ذيل"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.flowers , "هـ - ز - ر - ـو"  ,"زهور"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.shadow , "ـل - ظـ"  ,"ظل"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.oil , "يـ - ـت - ز"  ,"زيت"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.pound , "ـيـ - ـه - جـ - ـنـ"  ,"جنيه"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.blueberry , "تـ - ت - ـو"  ,"توت"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.seed , "ـذ - ر - ة - بـ"  ,"بذرة"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.clouds , "ـيـ - م - غـ - ـو"  ,"غيوم"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.cloud , "ـمـ - غـ - ـة - ـيـ"  ,"غيمة"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.oats , "ـا - فـ - شـ - ن - ـو"  ,"شوفان"));
+        modelSecondExercise.add(new ModelSecondExercise(R.drawable.church , "ـنـ - ـسـ - ـيـ - ـة - كـ"  ,"كنيسة"));
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(ActivitySecondExercise.this,
                 LinearLayoutManager.HORIZONTAL, true);
         recyclerView.setLayoutManager(layoutManager);
@@ -58,8 +56,10 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
         adapterSecondExercise.setOnitemclicklistener(new AdapterSecondExercise.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                wordImage.setImageResource(WordsImages[position]);
-                wordsLetters.setText(WordsLetters[position]);
+                editText.setText("");
+                Position = position;
+                wordImage.setImageResource(modelSecondExercise.get(position).getImage());
+                wordsLetters.setText(modelSecondExercise.get(position).getQuestion());
             }
         });
         recyclerView.setAdapter(adapterSecondExercise);
@@ -81,7 +81,11 @@ public class ActivitySecondExercise extends AppCompatActivity implements Adapter
     }
 
     public void correcting(View view) {
-
+        if (editText.getText().toString().equals(modelSecondExercise.get(Position).getAnswer())) {
+            Toast.makeText(getApplicationContext() , "إجابة صحيحة" , Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext() , "إجابة خاطئة" , Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void onBackPressed() {

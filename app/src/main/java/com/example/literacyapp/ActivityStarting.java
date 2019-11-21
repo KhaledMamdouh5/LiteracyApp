@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class ActivityStarting extends AppCompatActivity {
+
     @Override
     public boolean onCreateOptionsMenu(Menu mentormenu) {
         MenuInflater inflater = getMenuInflater();

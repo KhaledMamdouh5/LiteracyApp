@@ -88,4 +88,13 @@ public class ActivityFirstExercise extends AppCompatActivity implements AdapterF
         Intent openactivitystarting = new Intent(this, ActivityStarting.class);
         startActivity(openactivitystarting);
     }
+
+    public void backward(View view) {
+        OpenActivityLetters();
+    }
+
+    public void OpenActivityLetters() {
+        Intent openactivityletters = new Intent(this,ActivityLetters.class);
+        startActivity (openactivityletters);
+    }
 }

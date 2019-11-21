@@ -15,7 +15,8 @@ public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExerc
     ArrayList<ModelThirdExercise> modelThirdExercise;
     Context contextthirdexercise;
     OnItemClickListener onitemclicklistener;
-
+    int image;
+    String question , answer ;
 
     public interface OnItemClickListener{
         void onItemClick (int position);
@@ -37,7 +38,7 @@ public class AdapterThirdExercise extends RecyclerView.Adapter<AdapterThirdExerc
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.imageView.setImageResource(modelThirdExercise.get(position).getWordsImages());
+        holder.imageView.setImageResource(modelThirdExercise.get(position).getImage());
     }
 
     @Override

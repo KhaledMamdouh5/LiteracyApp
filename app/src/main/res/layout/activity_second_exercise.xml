@@ -58,7 +58,7 @@
                     android:onClick="correcting"/>
 
                 <EditText
-                    android:id="@+id/EditTextSeconddExercise"
+                    android:id="@+id/EditTextSecondExercise"
                     android:layout_width="180dp"
                     android:layout_height="48dp"
                     android:gravity="center"

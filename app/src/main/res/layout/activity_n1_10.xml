@@ -35,8 +35,8 @@
             android:id="@+id/CameraN1"
             android:layout_width="80dp"
             android:layout_height="65dp"
-            android:layout_marginLeft="48dp"
-            android:layout_marginRight="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:background="@drawable/pen"
             android:onClick="cameran1" />
 
