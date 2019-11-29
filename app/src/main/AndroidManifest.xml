@@ -2,23 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.literacyapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.Camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/pen"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityMentor"/>
-        <activity android:name=".ActivityZero"/>
-        <activity android:name=".ActivityN1_10"/>
-        <activity android:name=".ActivityN11_90"/>
-        <activity android:name=".ActivityFirstExercise"/>
-        <activity android:name=".ActivityThirdExercise"/>
-        <activity android:name=".ActivityLetters"/>
-        <activity android:name=".ActivitySecondExercise"/>
-        <activity android:name=".ActivityFourthExercise"/>
-        <activity android:name=".ActivityStarting">
+        <activity android:name=".Activities.NumbersExerciseActivity"/>
+        <activity android:name=".Activities.ActivityOriginal" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.LogInActivity"/>
+        <activity android:name=".Activities.ActivityFourthExercise"/>
+        <activity android:name=".Activities.ActivityMentor" />
+        <activity android:name=".Activities.ZeroActivity" />
+        <activity android:name=".Activities.ActivityN1_10" />
+        <activity android:name=".Activities.ActivityN11_100" />
+        <activity android:name=".Activities.ActivityFirstExercise" />
+        <activity android:name=".Activities.ThirdExerciseActivity" />
+        <activity android:name=".Activities.ActivityLetters" />
+        <activity android:name=".Activities.SecondExerciseActivity" />
+        <activity android:name=".Activities.FifthExerciseActivity" />
+        <activity android:name=".Activities.StartingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SecondExerciseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/WordImageSecondExercise"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Audio"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/audio"
+                android:onClick="audio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WordImageSecondExercise" />
+
+
+            <TextView
+                android:id="@+id/WordsLettersSecondExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#00FFFFFF"
+                android:text="يـ - ـل - ذ"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Audio" />
+
+            <EditText
+                android:id="@+id/EditTextSecondExercise"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WordsLettersSecondExercise" />
+
+            <Button
+                android:id="@+id/Correcting"
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/check"
+                android:onClick="correcting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditTextSecondExercise" />
+
+            <Button
+                android:id="@+id/Backward"
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/leftarrow"
+                android:onClick="backward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Correcting" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
