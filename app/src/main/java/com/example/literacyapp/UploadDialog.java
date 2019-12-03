@@ -47,8 +47,8 @@ public class UploadDialog extends AppCompatDialogFragment {
     public static StorageReference storageReference;
     public static String uploadedImageUrl;
     public static String usernameeeeeee;
-    MediaPlayer image_sent_successfully;
-    MediaPlayer sending_failed;
+    // MediaPlayer image_sent_successfully;
+    // MediaPlayer sending_failed;
 
     @NonNull
     @Override

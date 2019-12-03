@@ -21,8 +21,8 @@ public class SecondExerciseActivity extends AppCompatActivity{
     int[] audio;
     String[] question;
     String[] answer;
-    MediaPlayer correct = MediaPlayer.create(this, R.raw.correctanswer);
-    MediaPlayer wrong = MediaPlayer.create(this, R.raw.wronganswer);
+    MediaPlayer correct;
+    MediaPlayer wrong;
     MediaPlayer mediaPlayer;
 
     @Override
@@ -40,6 +40,8 @@ public class SecondExerciseActivity extends AppCompatActivity{
         question = new String[]{"يـ - ـل - ذ","هـ - ز - ر - ـو","ـمـ - غـ - ـة - ـيـ","ـل - ظـ","يـ - ـت - ز","ـيـ - ـه - جـ - ـنـ",
                 "تـ - ت - ـو","ـذ - ر - ة - بـ","ـيـ - م - غـ - ـو","ـا - فـ - شـ - ن - ـو","ـنـ - ـسـ - ـيـ - ـة - كـ"};
         answer = new String[]{"ذيل","زهور","غيمة","ظل","زيت","جنيه","توت","بذرة","غيوم","شوفان","كنيسة"};
+        correct = MediaPlayer.create(this, R.raw.correctanswer);
+        wrong = MediaPlayer.create(this, R.raw.wronganswer);
     }
 
     public void OpenActivityThirdExercise() {

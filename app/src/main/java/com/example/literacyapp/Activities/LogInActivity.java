@@ -34,9 +34,9 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in_activity);
-        txtEmail=(EditText)findViewById(R.id.edittexrem);
-        txtPassword=(EditText)findViewById(R.id.edittextpass);
-        btn_login=(Button)findViewById(R.id.buttonlogin);
+        txtEmail= findViewById(R.id.edittexrem);
+        txtPassword= findViewById(R.id.edittextpass);
+        btn_login= findViewById(R.id.buttonlogin);
         firebaseAuth= FirebaseAuth.getInstance();
         firebaseDatabase=FirebaseDatabase.getInstance();
 

@@ -30,11 +30,11 @@ public class ActivityFirstExercise extends AppCompatActivity implements FirstExe
     FirstExerciseAdapter firstExerciseAdapter;
     TextView text_view;
     ImageView wordImage;
-    String [] Words;
+    String[] Words;
     static public String index;
-    // int[] wordAudio;
+    //int[] wordAudio;
     int Position = 0;
-    //  MediaPlayer wordaudio;
+    //MediaPlayer wordaudio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,8 +122,17 @@ public class ActivityFirstExercise extends AppCompatActivity implements FirstExe
     }
 
     public void openDialog() {
-        index = Words [Position];
+        index = Words[Position];
         UploadDialog uploadDialog = new UploadDialog();
         uploadDialog.show(getSupportFragmentManager(), "upload dialog");
+    }
+
+    public void backward(View view) {
+        OpenActivityLetters();
+    }
+
+    public void OpenActivityLetters() {
+        Intent openactivityletters = new Intent(this, ActivityLetters.class);
+        startActivity(openactivityletters);
     }
 }

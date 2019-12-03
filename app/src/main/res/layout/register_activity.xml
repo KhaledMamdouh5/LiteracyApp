@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activities.RegisterActivity">
-    <RadioGroup
 
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -15,15 +15,17 @@
 
         <RadioButton
             android:id="@+id/studentradio"
-            android:layout_width="227dp"
+            android:layout_width="205dp"
             android:layout_height="match_parent"
-            android:text="Student" />
+            android:gravity="center"
+            android:text="طالب" />
 
         <RadioButton
             android:id="@+id/teacherradio"
-            android:layout_width="227dp"
+            android:layout_width="205dp"
             android:layout_height="wrap_content"
-            android:text="Teacher" />
+            android:gravity="center"
+            android:text="معلم" />
     </RadioGroup>
 
     <LinearLayout
@@ -39,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:hint="Email" />
+            android:hint="البريد الإلكتروني" />
 
         <EditText
             android:id="@+id/usernuuuuuuuuame"
@@ -47,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:hint="Username" />
+            android:hint="اسم المستخدم" />
 
         <EditText
             android:id="@+id/password"
@@ -55,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:hint="Password" />
+            android:hint="كلمة المرور" />
 
         <EditText
             android:id="@+id/confirmpassword"
@@ -63,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:hint="Confirm Password" />
+            android:hint="تأكيد كلمة المرور" />
 
         <Button
             android:id="@+id/buttonregister"
@@ -71,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Register" />
+            android:text="سجل" />
 
         <TextView
             android:id="@+id/txtView"
@@ -79,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="Already Have Registered? Login!" />
+            android:text="بالفعل لديك حساب ؟ تسجيل الدخول"/>
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -87,9 +89,5 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:visibility="gone" />
-
-
     </LinearLayout>
-
-
 </LinearLayout>
